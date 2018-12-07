@@ -34,11 +34,12 @@ router.post("/comments", (req, res) => {
   const comment = new Comment();
   //body paser lets you use the req.body
   const { author, text } = req.body;
+  console.log(`author: ${author}`);
   if (!author || !text) {
     //throw error
     return res.json({
       success: false,
-      error: "You must provide an author and comment"
+      error: "You must provide an author and text"
     });
   }
   comment.author = author;
