@@ -1,0 +1,7 @@
+{
+  "name": "mern-app",
+  "version": "1.0.0",
+  "description": "a full stack commenting application",
+  "main": "index.js",
+  "license": "MIT"
+}
